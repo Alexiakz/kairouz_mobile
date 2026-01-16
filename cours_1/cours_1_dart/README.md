@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+1. Les lignes 8,9,10 (la boucle). C'est relié à la ligne 5 qui laisse a être null alors qu'il ne l'est pas
+
+2. 
