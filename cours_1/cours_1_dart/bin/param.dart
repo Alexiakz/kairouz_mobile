@@ -1,5 +1,5 @@
 String foo({String? name, int? number, bool toUpperCase=false}) =>
-   '${(toUpperCase ? name.toUpperCase() : name)} $number';
+  '${(toUpperCase ? name.toUpperCase() : name)} $number';
 
 void useFoo() {
  foo(name: 'a');
