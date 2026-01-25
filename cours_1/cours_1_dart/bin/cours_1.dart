@@ -3,9 +3,7 @@ void main() {
   int b = a ?? 5;
 
 
-  if (a == null) {
-    a = 3;
-  }
+  a = 3;
   
   int c = a;
   print(c);
