@@ -1,3 +1,4 @@
+import 'package:cours_01/res/colors.dart';
 import 'package:flutter/material.dart';
 
 class Separateur extends StatelessWidget {
@@ -5,14 +6,20 @@ class Separateur extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center (
-    child : Text(
-      'Ou',
-      style: TextStyle(
-        color: Colors.grey,
-        fontSize: 14,
-      ),
-    ),
+    return Row(
+      children: const [
+        Expanded(child: Divider()),
+        SizedBox(width: 10),
+        Text(
+          'Ou',
+          style: TextStyle(
+          color: AppColors.textSecondary,
+          fontSize: 14,
+          ),
+        ),
+        SizedBox(width: 10),
+        Expanded(child: Divider()),
+      ],
     );
   }
 }

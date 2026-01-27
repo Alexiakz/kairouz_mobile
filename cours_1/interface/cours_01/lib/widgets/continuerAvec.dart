@@ -27,7 +27,9 @@ class ContinuerAvec extends StatelessWidget {
             height: 20,
           ),
           const SizedBox(width: 8),
-          Text('Continuer avec $label'),
+          Expanded(child: Text('Continuer avec $label', textAlign: TextAlign.center,
+          ),
+          ),
         ],
       ),
     );

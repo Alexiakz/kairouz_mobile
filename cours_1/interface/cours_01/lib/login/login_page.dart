@@ -20,49 +20,54 @@ class LoginPage extends StatelessWidget {
           ),
         ),
       ),
-      body: SizedBox(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical : 24,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const Email(),
-            const SizedBox(height: 16),
+
+            const SizedBox(height: 24),
 
             Continuer(
               onPressed: () {
-                debugPrint('Continuer pressed');
+              //  debugPrint('Continuer pressed');
               },
             ),
 
-            const SizedBox(height: 24),
+            const SizedBox(height: 40),
             const Separateur(),
-            const SizedBox(height: 24),
+            const SizedBox(height: 40),
 
             ContinuerAvec(
               label: 'Apple',
               iconPath: 'assets/apple_logo.svg',
               onPressed: () {
-                debugPrint('Apple pressed');
+               // debugPrint('Apple pressed');
               },
             ),
 
-            const SizedBox(height: 12),
+            const SizedBox(height: 16),
             
             ContinuerAvec(
               label: 'Facebook',
               iconPath: 'assets/facebook_logo.svg',
               onPressed: () {
-                debugPrint('Facebook pressed');
+               // debugPrint('Facebook pressed');
               },
             ),
 
-            const SizedBox(height: 12),
+            const SizedBox(height: 16),
 
 
             ContinuerAvec(
               label: 'Google',
               iconPath: 'assets/google_logo.svg',
               onPressed: () {
-                debugPrint('Google pressed');
+               // debugPrint('Google pressed');
               },
             ),
 
