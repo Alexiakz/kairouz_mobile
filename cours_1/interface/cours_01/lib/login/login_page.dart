@@ -4,8 +4,15 @@ import 'package:cours_01/widgets/email.dart';
 import 'package:cours_01/widgets/separateur.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  String _email = '';
 
   @override
   Widget build(BuildContext context) {
@@ -23,19 +30,25 @@ class LoginPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 16,
-          vertical : 24,
+          vertical: 24,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const Email(),
+            Email(
+              onChanged: (value) {
+                setState(() {
+                  _email = value;
+                });
+              },
+            ),
 
             const SizedBox(height: 24),
 
             Continuer(
-              onPressed: () {
-              //  debugPrint('Continuer pressed');
-              },
+              onPressed: _email.isNotEmpty
+                  ? () {}
+                  : null, 
             ),
 
             const SizedBox(height: 40),
@@ -45,35 +58,27 @@ class LoginPage extends StatelessWidget {
             ContinuerAvec(
               label: 'Apple',
               iconPath: 'assets/apple_logo.svg',
-              onPressed: () {
-               // debugPrint('Apple pressed');
-              },
+              onPressed: () {},
             ),
 
             const SizedBox(height: 16),
-            
+
             ContinuerAvec(
               label: 'Facebook',
               iconPath: 'assets/facebook_logo.svg',
-              onPressed: () {
-               // debugPrint('Facebook pressed');
-              },
+              onPressed: () {},
             ),
 
             const SizedBox(height: 16),
-
 
             ContinuerAvec(
               label: 'Google',
               iconPath: 'assets/google_logo.svg',
-              onPressed: () {
-               // debugPrint('Google pressed');
-              },
+              onPressed: () {},
             ),
-
           ],
         ),
       ),
-      ); // écran vide pour l’instant
+    );
   }
 }

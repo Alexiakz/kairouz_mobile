@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 
 class Email extends StatelessWidget {
-  const Email({super.key});
+  final ValueChanged<String>? onChanged;
+
+  const Email({
+    super.key,
+    this.onChanged,
+  });
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       autofocus: false,
-      style: const TextStyle(color: Colors.black),
+      onChanged: onChanged,
       decoration: InputDecoration(
         prefixIcon: const Icon(Icons.email_outlined),
         hintText: 'Adresse email',
