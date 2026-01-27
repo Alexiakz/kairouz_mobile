@@ -1,0 +1,1 @@
+ C:\\Users\\Alex\\Desktop\\ECE\\ING4\\Mobile\\cours_2\\cours_02\\.dart_tool\\flutter_build\\b56d03f7d7a44867ac38ff3ff8a89bc8\\native_assets.json: 

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Alex\Desktop\ECE\ING4\Mobile\cours_2\cours_02\build\windows\x64\CMakeFiles\27006e1212bfffd6818e2483daa05856\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{76ACF862-4FF8-3B1B-8D6A-B19475F9E115}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

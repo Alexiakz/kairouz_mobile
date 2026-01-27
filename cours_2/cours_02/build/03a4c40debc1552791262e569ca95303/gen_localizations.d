@@ -1,0 +1,1 @@
+ C:\\Users\\Alex\\Desktop\\ECE\\ING4\\Mobile\\cours_2\\cours_02\\lib\\l10n\\app_localizations_fr.dart C:\\Users\\Alex\\Desktop\\ECE\\ING4\\Mobile\\cours_2\\cours_02\\lib\\l10n\\app_localizations.dart:  C:\\Users\\Alex\\Desktop\\ECE\\ING4\\Mobile\\cours_2\\cours_02\\l10n.yaml C:\\Users\\Alex\\Desktop\\ECE\\ING4\\Mobile\\cours_2\\cours_02\\lib\\l10n\\app_fr.arb
