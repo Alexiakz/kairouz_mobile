@@ -21,44 +21,61 @@ class ProductPage extends StatelessWidget {
         builder: (context, notifier, _) {
           final product = notifier.product;
 
-          if (product == null) return const ProductLoading();
+          if (product == null) {
+            return const ProductLoading();
+          }
 
           return Scaffold(
             body: SizedBox.expand(
               child: Stack(
                 children: [
+                  // Image produit (avec fallback)
                   PositionedDirectional(
-                    top: 0.0,
-                    start: 0.0,
-                    end: 0.0,
+                    top: 0,
+                    start: 0,
+                    end: 0,
                     height: IMAGE_HEIGHT,
-                    child: Image.network(
-                      product.picture!, // récupéré du product
-                      fit: BoxFit.cover,
-                      cacheHeight: (IMAGE_HEIGHT * MediaQuery.devicePixelRatioOf(context)).toInt(),
-                    ),
+                    child: product.picture != null
+                        ? Image.network(
+                            product.picture!,
+                            fit: BoxFit.cover,
+                            cacheHeight: (IMAGE_HEIGHT *
+                                    MediaQuery.devicePixelRatioOf(context))
+                                .toInt(),
+                          )
+                        : Container(
+                            color: Colors.grey.shade300,
+                            child: const Icon(Icons.image, size: 64),
+                          ),
                   ),
+
+                  // Contenu
                   PositionedDirectional(
-                    top: IMAGE_HEIGHT - 16.0,
-                    start: 0.0,
-                    end: 0.0,
-                    bottom: 0.0,
+                    top: IMAGE_HEIGHT - 16,
+                    start: 0,
+                    end: 0,
+                    bottom: 0,
                     child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.vertical(
-                          top: Radius.circular(16.0),
-                        ),
+                      decoration: const BoxDecoration(
                         color: Colors.white,
+                        borderRadius:
+                            BorderRadius.vertical(top: Radius.circular(16)),
                       ),
                       padding: const EdgeInsetsDirectional.symmetric(
-                        horizontal: 20.0,
-                        vertical: 30.0,
+                        horizontal: 20,
+                        vertical: 30,
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(product.name ?? 'Produit inconnu', style: context.theme.title1),
-                          Text(product.brands?.join(', ') ?? '', style: context.theme.title2),
+                          Text(
+                            product.name ?? 'Produit inconnu',
+                            style: context.theme.title1,
+                          ),
+                          Text(
+                            product.brands?.join(', ') ?? '',
+                            style: context.theme.title2,
+                          ),
                           Scores(product: product),
                         ],
                       ),
@@ -88,14 +105,26 @@ class Scores extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(flex: 44, child: _Nutriscore(nutriscore: product.nutriScore!)),
+              Expanded(
+                flex: 44,
+                child: _Nutriscore(
+                  nutriscore: product.nutriScore ?? ProductNutriScore.unknown,
+                ),
+              ),
               const VerticalDivider(),
-              Expanded(flex: 56, child: _NovaGroup(novaScore: product.novaScore!)),
+              Expanded(
+                flex: 56,
+                child: _NovaGroup(
+                  novaScore: product.novaScore ?? ProductNovaScore.unknown,
+                ),
+              ),
             ],
           ),
         ),
         const Divider(),
-        _GreenScore(greenScore: product.greenScore!),
+        _GreenScore(
+          greenScore: product.greenScore ?? ProductGreenScore.unknown,
+        ),
       ],
     );
   }

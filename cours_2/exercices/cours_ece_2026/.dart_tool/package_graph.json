@@ -7,6 +7,7 @@
       "name": "formation_flutter",
       "version": "1.0.0+1",
       "dependencies": [
+        "dio",
         "flutter",
         "flutter_localizations",
         "flutter_svg",
@@ -355,6 +356,34 @@
       "dependencies": [
         "collection"
       ]
+    },
+    {
+      "name": "dio",
+      "version": "5.9.1",
+      "dependencies": [
+        "async",
+        "collection",
+        "dio_web_adapter",
+        "http_parser",
+        "meta",
+        "mime",
+        "path"
+      ]
+    },
+    {
+      "name": "dio_web_adapter",
+      "version": "2.1.1",
+      "dependencies": [
+        "dio",
+        "http_parser",
+        "meta",
+        "web"
+      ]
+    },
+    {
+      "name": "mime",
+      "version": "2.0.0",
+      "dependencies": []
     }
   ],
   "configVersion": 1
