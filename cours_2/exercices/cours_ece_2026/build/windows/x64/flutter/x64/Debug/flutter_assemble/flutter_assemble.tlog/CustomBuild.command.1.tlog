@@ -1,0 +1,28 @@
+^C:\USERS\ALEX\DESKTOP\ECE\ING4\MOBILE\COURS_2\EXERCICES\COURS_ECE_2026\BUILD\WINDOWS\X64\CMAKEFILES\F47591A8C15CDF25112A3C0C236FA040\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\Alex\develop\flutter PROJECT_DIR=C:\Users\Alex\Desktop\ECE\ING4\Mobile\cours_2\exercices\cours_ece_2026 FLUTTER_ROOT=C:\Users\Alex\develop\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Alex\Desktop\ECE\ING4\Mobile\cours_2\exercices\cours_ece_2026\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Alex\Desktop\ECE\ING4\Mobile\cours_2\exercices\cours_ece_2026 FLUTTER_TARGET=C:\Users\Alex\Desktop\ECE\ING4\Mobile\cours_2\exercices\cours_ece_2026\lib\main.dart DART_DEFINES=RkxVVFRFUl9WRVJTSU9OPTMuMzguNw==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049M2I2MmVmYzJhMw==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049NzhmYzMwMTJlNA==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMC43 DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\Alex\Desktop\ECE\ING4\Mobile\cours_2\exercices\cours_ece_2026\.dart_tool\package_config.json C:/Users/Alex/develop/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ALEX\DESKTOP\ECE\ING4\MOBILE\COURS_2\EXERCICES\COURS_ECE_2026\BUILD\WINDOWS\X64\CMAKEFILES\958A9D48B9339E1247C59C20C32C7E78\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ALEX\DESKTOP\ECE\ING4\MOBILE\COURS_2\EXERCICES\COURS_ECE_2026\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Alex/Desktop/ECE/ING4/Mobile/cours_2/exercices/cours_ece_2026/windows -BC:/Users/Alex/Desktop/ECE/ING4/Mobile/cours_2/exercices/cours_ece_2026/build/windows/x64 --check-stamp-file C:/Users/Alex/Desktop/ECE/ING4/Mobile/cours_2/exercices/cours_ece_2026/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
