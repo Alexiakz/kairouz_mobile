@@ -1,0 +1,10 @@
+^C:\USERS\ALEX\DESKTOP\ECE\ING4\MOBILE\COURS_2\EXERCICES\COURS_ECE_2026\BUILD\WINDOWS\X64\CMAKEFILES\A4989D2B6249FE6895FB74D6DB6DD9E5\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

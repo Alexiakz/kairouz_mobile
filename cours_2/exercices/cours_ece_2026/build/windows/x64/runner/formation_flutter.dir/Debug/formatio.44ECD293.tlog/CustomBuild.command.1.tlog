@@ -1,0 +1,10 @@
+^C:\USERS\ALEX\DESKTOP\ECE\ING4\MOBILE\COURS_2\EXERCICES\COURS_ECE_2026\WINDOWS\RUNNER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Alex/Desktop/ECE/ING4/Mobile/cours_2/exercices/cours_ece_2026/windows -BC:/Users/Alex/Desktop/ECE/ING4/Mobile/cours_2/exercices/cours_ece_2026/build/windows/x64 --check-stamp-file C:/Users/Alex/Desktop/ECE/ING4/Mobile/cours_2/exercices/cours_ece_2026/build/windows/x64/runner/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
