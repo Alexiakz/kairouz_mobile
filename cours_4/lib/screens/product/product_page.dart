@@ -8,7 +8,8 @@ import 'package:provider/provider.dart';
 
 class ProductPage extends StatelessWidget {
   // TODO Rajouter le passage d'un paramètre
-  const ProductPage({super.key});
+  final String barcode;
+  const ProductPage({super.key, required this.barcode});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class ProductPage extends StatelessWidget {
         MaterialLocalizations.of(context);
 
     return ChangeNotifierProvider<ProductFetcher>(
-      create: (_) => ProductFetcher(barcode: '5000159484695'),
+      create: (_) => ProductFetcher(barcode : barcode),
       child: Scaffold(
         backgroundColor: Colors.white,
         body: Stack(

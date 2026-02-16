@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:formation_flutter/l10n/app_localizations.dart';
 import 'package:formation_flutter/res/app_icons.dart';
 import 'package:formation_flutter/screens/homepage/homepage_empty.dart';
+import 'package:go_router/go_router.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -30,5 +31,6 @@ class HomePage extends StatelessWidget {
 
   void _onScanButtonPressed(BuildContext context) {
     // TODO A compléter
+    context.push('/product');
   }
 }
